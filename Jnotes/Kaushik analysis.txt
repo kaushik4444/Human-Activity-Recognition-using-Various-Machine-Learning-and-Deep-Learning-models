@@ -1,0 +1,54 @@
+For kNN : n_neighbors=5
+For SVM : kernel='rbf', C=1, gamma='auto'
+
+PSV:(Train/Test : 80/20)
+
+subj1:
+	kNN - 	Accuracy: 0.9708064910707005
+		f1_score: 0.9707594079052798
+	SVM - 	Accuracy: 0.9270162276767512
+		f1_score: 0.9271730037510718
+subj2:
+	kNN - 	Accuracy: 0.9484121755171959
+		f1_score: 0.9480949200687379
+	SVM - 	Accuracy: 0.8628936618790355
+		f1_score: 0.862668982858159
+
+PSV using SW:(Train/Test : 80/20) (Window size: 100, Overlap: 70)
+
+subj1:
+	kNN - 	Accuracy: 0.7310513447432763
+		f1_score: 0.7088005035068569
+	SVM - 	Accuracy: 0.9462102689486552
+		f1_score: 0.9461767166309594
+subj2:
+	kNN - 	Accuracy: 0.7351778656126482
+		f1_score: 0.7135662470663449
+	SVM - 	Accuracy: 0.9051383399209486
+		f1_score: 0.9055506370362308	
+CSV:
+
+Train/Test : Subj1/Subj2
+	kNN - 	Accuracy: 0.6154486405326892
+		f1_score: 0.6157977388476304
+	SVM - 	Accuracy: 0.6556940953748736
+		f1_score: 0.6575749757861352
+Train/Test : Subj2/Subj1
+	kNN - 	Accuracy: 0.6565328723109292
+		f1_score: 0.6455334063730223
+	SVM - 	Accuracy: 0.7275455449904588
+		f1_score: 0.7123243402544063
+
+CSV using SW: (Window size: 100, Overlap: 70)
+
+Train/Test : Subj1/Subj2
+	kNN -	Accuracy: 0.525
+		f1_score: 0.4876336422757326
+	SVM - 	Accuracy: 0.7852941176470588
+		f1_score: 0.7852585410412815	
+
+Train/Test : Subj2/Subj1
+	kNN -	Accuracy: 0.6340029397354238
+		f1_score: 0.6134016901347072
+	SVM - 	Accuracy: 0.8417442430181283
+		f1_score: 0.8381485838697392	
