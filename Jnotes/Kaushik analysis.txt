@@ -1,31 +1,30 @@
 Preprocessed dataset - Dataset.csv
 For kNN : n_neighbors=5
 For SVM : kernel='rbf', C=1, gamma='auto'
+For RepeatedStratifiedKFold, n_splits=10, n_repeats=5
 
-PSV using SW:(Train/Test : 80/20) (Window size: 100, Overlap: 70)
-For k fold Cross Validations, CV = 10 (10 fold)
 
+PSV using SW: (Window size: 100, Overlap: 70)
 Overall Dataset:
-	kNN - 	Accuracy: 0.6646264321137474
-		f1_score: 0.6342934394461062
-	SVM - 	Accuracy: 0.9028690051885755
-		f1_score: 0.9070407596053585
-subj1:
-	kNN - 	Accuracy: 0.6933692013390722
-		f1_score: 0.6373422229368703
-	SVM - 	Accuracy: 0.9108871353419419
-		f1_score: 0.9096104391459843
-subj2:
-	kNN - 	Accuracy: 0.7004642700294874
-		f1_score: 0.6664494176000224
-	SVM - 	Accuracy: 0.886482840830667
-		f1_score: 0.8859559796744007	
+	kNN - 	Accuracy: 0.6958647148194512
+		f1_score: 0.6761090925629988
+	SVM - 	Accuracy: 0.9199740093451694
+		f1_score: 0.919948660858916
+Subject1:
+	kNN - 	Accuracy: 0.7150411286465805
+		f1_score: 0.686974117356847
+	SVM - 	Accuracy: 0.9487541846006694
+		f1_score: 0.948762351611204
+Subject2:
+	kNN - 	Accuracy: 0.7282150699542004
+		f1_score: 0.7016573370742368
+	SVM - 	Accuracy: 0.908266829788569
+		f1_score: 0.9079226868659863	
 
 CSV using SW: (Window size: 100, Overlap: 70)
-
 Subject1:Train, Subject2:Test
-	kNN -	Accuracy: 0.525
-		f1_score: 0.4876336422757326
+	kNN -	Accuracy: 0.5250000000000000
+		f1_score: 0.4876336422757325
 	SVM - 	Accuracy: 0.7852941176470588
 		f1_score: 0.7852585410412815	
 
@@ -33,4 +32,4 @@ Subject2:Train, Subject1:Test
 	kNN -	Accuracy: 0.6340029397354238
 		f1_score: 0.6134016901347072
 	SVM - 	Accuracy: 0.8417442430181283
-		f1_score: 0.8381485838697392	
+		f1_score: 0.8381485838697392
