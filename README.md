@@ -1,2 +1,2 @@
 # Basketball-ActiviesClassifier
-RAML project to classif basket ball activities (3 wearable sensors) 
+Basketball Activities recognition (HAR) using Classical Machine Learning techniques and also Deep Learning algorithms and a brief comparison between them.
