@@ -1,0 +1,52 @@
+Preprocessed data: df_activity.csv
+Sliding window: Window length=100, overlap=60
+
+Normal Cross Validation, Model : LSTM
+	For StratifiedKFold: n_splits = 10
+	Epochs=4
+	Accuracy : 0.8535
+	F1_score : 0.8501
+	Confusion_matrix : Null, dribbling, layup, running, shooting, walking
+ 			[[84  2  0  2  0  0]
+ 			[ 7 32  7  0  0  0]
+ 			[ 5  0 57  5  2  5]
+			[ 5  0  0 51  3  2]
+			[ 2  4  0  0 46 12]
+ 			[ 0  0  4  0  1 70]]
+
+SUB 1 Cross Validation, Model : LSTM
+	For StratifiedKFold: n_splits=4
+	Epochs=4
+	Accuracy : 0.8573
+	F1_score : 0.8553
+	Confusion_matrix : Null, layup, running, shooting, walking 
+ 			[[84  4  2 12 13]
+ 			[ 0 79  4  1  0]
+ 			[ 5 13 46  3  7]
+			[ 4  3  0 79  3]
+ 			[ 5  4 11  2 71]]
+
+SUB 2 Cross Validation, Model : LSTM
+	For StratifiedKFold: n_splits=8
+	Epochs=4
+	Accuracy : 0.8432
+	F1_score : 0.8436
+	Confusion_matrix : Null, dribbling, layup, running, shooting, walking 
+			[[46  1  2  1  0  2]
+ 			[ 3 42 11  0  0  0]
+			[ 0  0 46  4  0  0]
+ 			[ 0  0  8 22  0 10]
+ 			[ 0  2  5  0 21  8]
+ 			[ 0  1  7  0  0 40]]
+
+Cross Participants Cross Validation, Model : LSTM
+	For StratifiedKFold: n_splits=2
+	Epochs=4
+	Accuracy : 0.7647
+	F1_score : 0.7643
+	Confusion_matrix : Null, layup, running, shooting, walking 
+ 			[[322  45   6  50  19]
+ 			[  4 190 105  19  48]
+ 			[  1  21 282   0   4]
+ 			[  5  35  51 170  62]
+ 			[ 11  34  31  12 287]]
